@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.name }} - {{ page.title }}</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    
+    <!-- Syntax Highlighting -->
+    <link href="css/syntax.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="page-header">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-1">
+          <img src="img/island.png" id="logo" height=128px />
+          <h1>{{ site.name }}</h1>
+          <p>{{ site.tagline }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- Content area (set to white background) -->
+    <div id="content">
+      <div class="container">
+        <!-- Upper progress bar -->
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            {% if page.progress %}
+              <div class="progress progress-upper progress-striped">
+                <div class="progress-bar progress-bar-info" style="width: {{ page.progress }}"></div>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+        <!-- Main page content -->
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h3>{{ page.title }}</h3>
+            {{ content }}
+          </div>
+        </div>
+        <!-- Page navigation -->
+        <div class="row">
+          <div id="navigator" class="col-md-8 col-md-offset-2">
+            {% if page.prev %}
+              <a href="{{ page.prev }}" class="pull-left btn btn-info">
+                &larr; {% if page.prev-text %}{{ page.prev-text }}{% else %}Previous{% endif %}
+              </a>
+            {% endif %}
+          
+            {% if page.next %}
+              <a href="{{ page.next }}" class="pull-right btn btn-info">
+                {% if page.next-text %}{{ page.next-text }}{% else %}Next{% endif %} &rarr;</a>
+            {% endif %}
+          </div>
+        </div>
+        <!-- Lower progress bar -->
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            {% if page.progress %}
+              <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-info" style="width: {{ page.progress }}"></div>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div id="page-footer">
+      <div class="container">
+        <div class="row">
+          <p>Code for this site is available on <a href="https://github.com/ccurtsinger/itsterminal">GitHub</a></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
