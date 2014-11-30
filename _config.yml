@@ -1,0 +1,4 @@
+name: It's Terminal
+tagline: Stranded without a GUI
+markdown: redcarpet
+pygments: true

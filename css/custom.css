@@ -1,0 +1,64 @@
+body {
+  color: #ffffff;
+  background-color: #0175b4;
+}
+
+#content {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+#page-header {
+  font-size: 28px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+  padding: 0.5em;
+}
+
+#page-footer {
+  text-align: center;
+  font-size: 16px;
+  padding: 1em;
+}
+
+#page-header a, #page-footer a {
+  color: #99ffcc;
+}
+
+.progress {
+  margin-top: 21px;
+}
+
+.progress-upper {
+  margin-bottom: 0px;
+}
+
+#logo {
+  float: left;
+  vertical-align: center; 
+  margin-right: 1em;
+}
+
+pre .sh .k, pre .sh .o {
+  font-weight: normal;
+}
+
+h4 {
+  color: #333333;
+  width: 100%;
+  padding-bottom: 4px;
+  margin-top: 1em;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+.alert .highlight {
+  background-color: transparent
+}
+
+.alert pre, .alert code {
+  padding: 0.2em;
+  background-color: #f0f8ff;
+}
+
+.alert pre {
+  border-color: #bbbbbb;
+}
