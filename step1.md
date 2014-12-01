@@ -25,7 +25,7 @@ Your terminal doesn't just show the `$` character as a prompt. It should look so
 royal:~ smith22j$
 {% endhighlight %}
 
-The first part (before the `:`) is the name of the server. Immediately after the `:` is the name of the current directory, followed by your username. Even though you're in your home directory (`/home/smith22j`) the prompt displays `~`. That's because `~` is shorthand for your home directory.
+The first part (before the `:`) is the name of the server. Immediately after the `:` is the name of the current directory, followed by your username. Even though you're in your home directory (`/userhomes/smith22j`) the prompt displays `~`. That's because `~` is shorthand for your home directory.
 
 To keep examples simple, this guide will just use `$` for the shell prompt, and any lines that don't start with a `$` are output from a command.
 
@@ -74,7 +74,7 @@ No matter where you are, you can just run `cd` with no argument to go back to yo
 {% highlight sh %}
 $ cd
 $ pwd
-/home/smith22j
+/Network/Servers/royal.cs.mtholyoke.edu/userhomes/smith22j
 {% endhighlight %}
 
 #### Moving around *faster*
@@ -82,18 +82,18 @@ $ pwd
 You can move more than one directory at a time, and you don't have to type the full names of directories. If you type in...
 
 {% highlight sh %}
-$ cd Si
+$ cd /pu
 {% endhighlight %}
 
-... then press <kbd>tab</kbd>, the shell will finish typing in `Sites/`. **You'll have to type an uppercase 'S' for tab completion to work.**
+... then press <kbd>tab</kbd>, the shell will finish typing in `/publish/`. **You'll have to type an lowercase 'p' for tab completion to work.**
 
 Don't run the command yet. We're going to move multiple directories in one step. Type `c` and push <kbd>tab</kbd> again. The shell will add an `s`, but it hasn't completed the entire directory because there are multiple options. If you hit <kbd>tab</kbd> **twice more** the shell will print the options:
 
 {% highlight sh %}
-$ cd Sites/cs
+$ cd /publish/cs
 cs101/ cs201/
 {% endhighlight %}
 
 Just type the next character that distinguishes the two options (a `2`) then press <kbd>tab</kbd> one last time to finish the completion.
 
-<strong>Run the completed command to move to your `Sites/cs201` directory and move on to the next step.</strong>
+<strong>Run the completed command to move to your `/publish/cs201` directory and move on to the next step.</strong>
