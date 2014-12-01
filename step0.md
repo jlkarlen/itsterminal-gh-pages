@@ -12,7 +12,7 @@ If you have a laptop with you, we encourage you to try this lab from your laptop
 
 #### Open a connection
 
-Jane Smith (username `smith22j`) can connect to that machine with the `ssh` command below. The `$` character is called a "prompt." The terminal prints this out when it is ready to accept a command. **The command won't work if you type the `$` character!**
+Jane Smith (username `smith22j`) can connect to the server with the `ssh` command below. The `$` character is called a "prompt." The terminal prints this out when it is ready to accept a command. **The command won't work if you type the `$` character!**
 
 {% highlight sh %}
 $ ssh smith22j@royal.cs.mtholyoke.edu
