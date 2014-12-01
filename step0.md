@@ -60,4 +60,5 @@ Script started, output file is typescript
 
 This command will write to a file called `typescript` in your home directory. Every command you run for this lab will be saved to the file. You'll learn how to copy this file into your lab directory as we move through the guide.
 
+move on to the next section, when you're ready.
 
