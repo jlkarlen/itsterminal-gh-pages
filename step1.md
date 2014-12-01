@@ -6,11 +6,11 @@ next: step2.html
 progress: 12%
 ---
 
-Now that you're connected to another machine, you'll need to move around the filesystem. When you're using the Terminal, you are always "located" in some directory. By default, you start in your home directory. You can check this with the `pwd` (**p**resent **w**orking **d**irectory) command:
+Now that you're connected to the server, you'll need to move around the filesystem. When you're using the Terminal, you are always "located" in some directory. By default, you start in your home directory. You can check this with the `pwd` (**p**resent **w**orking **d**irectory) command:
 
 {% highlight sh %}
 $ pwd
-/home/smith22j
+/Network/Servers/royal.cs.mtholyoke.edu/userhomes/smith22j
 {% endhighlight %}
 
 
@@ -22,10 +22,10 @@ $ pwd
 Your terminal doesn't just show the `$` character as a prompt. It should look something like this:
 
 {% highlight sh %}
-cslab-31:~ smith22j$
+royal:~ smith22j$
 {% endhighlight %}
 
-The first part (before the `:`) is the name of the machine. Immediately after the `:` is the name of the current directory, followed by your username. Even though you're in your home directory (`/home/smith22j`) the prompt displays `~`. That's because `~` is shorthand for your home directory.
+The first part (before the `:`) is the name of the server. Immediately after the `:` is the name of the current directory, followed by your username. Even though you're in your home directory (`/home/smith22j`) the prompt displays `~`. That's because `~` is shorthand for your home directory.
 
 To keep examples simple, this guide will just use `$` for the shell prompt, and any lines that don't start with a `$` are output from a command.
 
@@ -46,19 +46,19 @@ Downloads   Music     Sites
 
 #### Moving around
 
-Let's move to the `Sites` directory. You can do this with the `cd` (**c**hange **d**irectory) command:
+Let's move to the `publish` directory. You can do this with the `cd` (**c**hange **d**irectory) command:
 
 {% highlight sh %}
-$ cd Sites
+$ cd /publish/
 {% endhighlight %}
 
-If you want to see what's in the `Sites` directory, you'll have to run `ls` again:
+If you want to see what's in the `publish` directory, you'll have to run `ls` again:
 
 {% highlight sh %}
 $ ls
 cs101    cs201
 $ pwd
-/home/smith22j/Sites
+
 {% endhighlight %}
 
 To move into the `cs201` directory, just run `cd` again:
