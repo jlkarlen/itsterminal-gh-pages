@@ -31,14 +31,10 @@ To open a file, press <kbd>control</kbd> + <kbd>x</kbd> then <kbd>control</kbd> 
 The complete path to the file is:
 
 ```
-/home/smith22j/Sites/cs201/Assignment7/Part1/src/BinaryTreeNode.java
+/publish/smith22j/cs201/Assignment7/Part1/src/BinaryTreeNode.java
 ```
 
-This is called an **absolute path** because it starts with `/`, the root of the filesystem. These paths are precise, but often long. You can shorten this by using `~` as a shorthand for your home directory:
-
-```
-~/Sites/cs201/Assignment7/Part1/src/BinaryTreeNode.java
-```
+This is called an **absolute path** because it starts with `/`, the root of the filesystem. These paths are precise, but often long. 
 
 You can also use a **relative path**. Instead of starting at `/`, you can use your current directory as the starting point. The relative path to this file is:
 
@@ -46,7 +42,7 @@ You can also use a **relative path**. Instead of starting at `/`, you can use yo
 ../Assignment7/Part1/src/BinaryTreeNode.java
 ```
 
-The `..` refers to the directory above your current directory (`Sites/cs201`), and the rest of the path should be familiar.
+The `..` refers to the directory above your current directory (`/publish/smith22j/cs201`), and the rest of the path should be familiar.
 
 If you didn't create separate directories for parts 1 and 2, you may have slightly different paths! Tab-completion should help you find your `BinaryTreeNode.java` file.
 
