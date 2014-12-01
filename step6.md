@@ -66,22 +66,17 @@ Remember, you can press <kbd>q</kbd> to quit `less`.
 ### More complicated examples
 
 #### How many lines of code did you write for this class?
-**to use the /publish absolute path you need to be on the server, otherwise, the path on your machine will be /Volumes/publish. Reconnect with this command**
-{% highlight sh %}
-$ ssh smith22j@royal.cs.mtholyoke.edu
-{% endhighlight %}
 
-
-First, use `find` to locate all the Java files in your `/cs201` directory:
+First, use `find` to locate all the Java files in your `Sites/cs201` directory:
 
 {% highlight sh %}
-$ find /publish/smith22j/cs201 -name "*.java"
+$ find ~/Sites/cs201 -name "*.java"
 {% endhighlight %}
 
 Use `cat` to print out these files, and pipe to `wc` to count lines:
 
 {% highlight sh %}
-$ cat `find /publish/smith22j/cs201 -name "*.java"` | wc -l
+$ cat `find ~/Sites/cs201 -name "*.java"` | wc -l
 {% endhighlight %}
 
 
@@ -91,18 +86,18 @@ $ cat `find /publish/smith22j/cs201 -name "*.java"` | wc -l
 Use `find` to locate files newer than the `Tetris` directory:
 
 {% highlight sh %}
-$ find /publish/smith22j/cs201 -name "*.java" -newer /publish/smith22j/cs201/Tetris
+$ find ~/Sites/cs201 -name "*.java" -newer ~/Sites/cs201/Tetris
 {% endhighlight %}
 
 Use backticks to pass these files to `grep` and search for "ActionListener":
 
 {% highlight sh %}
-$ grep ActionListener `find /publish/smith22j/cs201 -name "*.java" -newer /publish/smith22j/cs201/Tetris`
+$ grep ActionListener `find ~/Sites/cs201 -name "*.java" -newer ~/Sites/cs201/Tetris`
 {% endhighlight %}
 
 And finally, pipe to `wc -l` to count lines. Here's the whole command:
 
 {% highlight sh %}
-$ grep ActionListener `find /publish/smith22j/cs201 -name "*.java" -newer /publish/smith22j/cs201/Tetris` | wc -l
+$ grep ActionListener `find ~/Sites/cs201 -name "*.java" -newer ~/Sites/cs201/Tetris` | wc -l
 {% endhighlight %}
 
