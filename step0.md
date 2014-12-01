@@ -6,7 +6,7 @@ next: step1.html
 progress: 1%
 ---
 
-You'll be completing this week's lab remotely on the computer next to you using the `ssh` command. The name `ssh` is short for **s**ecure **sh**ell. This gives you access to another machine through a secure (encrypted) connection. As long as you are connected, everything will work as if you were sitting at the remote machine and using Terminal.
+You'll be completing this week's lab remotely on the server using the `ssh` command. The name `ssh` is short for **s**ecure **sh**ell. This gives you access to another machine through a secure (encrypted) connection. As long as you are connected, everything will work as if you were sitting at the remote machine and using Terminal.
 
 Even though you're working just a few feet away, the same procedure will work to connect to a computer anywhere in the world as long as you have an account.
 
