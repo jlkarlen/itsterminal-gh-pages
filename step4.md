@@ -78,6 +78,8 @@ import cs201.smith22j.util.Stack;
 
 #### Compiling and running with packages
 
+**ATTENTION! there is no java compiler on the server so you'll have to run the *java* and *javac* commands in a new terminal window. You can't compile and run java code from the server.**
+
 Before you can compile, you'll need to make a `bin` directory.
 
 The following command **will no longer work** for compiling:
